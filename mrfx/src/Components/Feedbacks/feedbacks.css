@@ -1,0 +1,110 @@
+.feedback-wrapper {
+  display: flex;
+  max-width: 80rem;
+  position: relative;
+  z-index: 0;
+
+  padding: 2.5rem 1.5rem;
+}
+.feedback-wrap {
+  margin-top: 3rem;
+  background-color: rgb(16 13 37);
+  border-radius: 20px;
+}
+.feedbackCard-container {
+  background-color: rgb(9 3 37 / 1);
+  border-radius: 1.5rem;
+  padding: 2.5rem;
+  width: 320px;
+}
+.feedbackCard-p {
+  color: #fff;
+  font-weight: 900;
+  font-size: 48px;
+}
+.feedbackCard-testimonial {
+  color: #fff;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+}
+.feedbackCard-name {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+}
+.feedbackCard-name span {
+  background: linear-gradient(to top, #2f80ed, #56ccf2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.feedbacks-header {
+  background-color: rgb(21 16 48);
+  border-radius: 1rem;
+  min-height: 300px;
+  padding: 2.5rem 1.5rem;
+}
+.feedbacks-header p {
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: rgb(170 166 195);
+}
+.feedbacks-header h2 {
+  font-weight: 900;
+  color: #fff;
+}
+.feedbacks-container {
+  padding-bottom: 3.5rem;
+  gap: 1.75rem;
+  flex-wrap: wrap;
+  margin-top: -6rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  display: flex;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* Responsive */
+@media (min-width: 500px) and (max-width: 900px) {
+  .feedbacks-container {
+    justify-content: center;
+  }
+}
+@media (min-width: 500px) and (max-width: 900px) {
+  .feedbackCard-container {
+    width: 400px;
+  }
+}
+@media (min-width: 901px) and (max-width: 1224px) {
+  .feedbackCard-container {
+    width: 280px;
+  }
+}
+@media (min-width: 1225px) {
+  .feedbackCard-container {
+    width: 320px;
+  }
+}
+@media (min-width: 640px) {
+  .feedback-wrapper {
+    padding: 4rem;
+    margin-left: 34.5px;
+    margin-right: 34.5px;
+  }
+  .feedbacks-header {
+    padding: 4rem;
+  }
+  .feedbacks-container {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+  .feedbacks-header p {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 768px) {
+  .feedbacks-header h2 {
+    font-size: 60px;
+  }
+}
